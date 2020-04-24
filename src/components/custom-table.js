@@ -18,7 +18,6 @@ server.
 
 import React, { useState, useEffect, Fragment } from 'react';
 import MaterialTable , {editComponent} from 'material-table';
-import ApiService from '../services/ApiService';
 import {API} from '../services/API';
 
 export default function CustomTable({ url }) {

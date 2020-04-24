@@ -8,7 +8,6 @@ run this code in the browser.
 import React, {useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import ApiService from './services/ApiService';
 import CustomTable from './components/custom-table.js';
 
 const appUrl = 'http://localhost:8080/user';
