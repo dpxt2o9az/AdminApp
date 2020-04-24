@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+This is the main module of the AdminApp.  See the REAME.md
+file in the security project to understand how to
+run this code in the browser.
 
+*/
+
+import React, {useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
+import ApiService from './services/ApiService';
+import CustomTable from './components/custom-table.js';
+
+const appUrl = 'http://localhost:8080/user';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomTable url={appUrl}/>
     </div>
   );
 }
-
 export default App;
